@@ -1,7 +1,7 @@
 /**Premium World Clock*/
 @font-face {
   font-family: "DS-DIGI";
-  src: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/fonts/DS-DIGI.TTF");
+  src: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/fonts/DS-DIGI.TTF");
 }
 .premium-world-clock__clock-wrapper {
   display: -webkit-flex;
@@ -287,48 +287,48 @@
 }
 
 .premium-world-clock__hand-1 .premium-world-clock__hours::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-1.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-1.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-1.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-1.svg");
 }
 .premium-world-clock__hand-1 .premium-world-clock__minutes::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-1.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-1.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-1.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-1.svg");
 }
 
 .premium-world-clock__hand-2 .premium-world-clock__hours::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-2.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-2.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-2.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-2.svg");
 }
 .premium-world-clock__hand-2 .premium-world-clock__minutes::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-2.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-2.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-2.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-2.svg");
 }
 
 .premium-world-clock__hand-3 .premium-world-clock__hours::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-3.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-3.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-3.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-3.svg");
 }
 .premium-world-clock__hand-3 .premium-world-clock__minutes::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-3.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-3.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-3.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-3.svg");
 }
 
 .premium-world-clock__hand-4 .premium-world-clock__hours::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-4.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-4.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-4.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-4.svg");
 }
 .premium-world-clock__hand-4 .premium-world-clock__minutes::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-4.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-4.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-4.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-4.svg");
 }
 
 .premium-world-clock__hand-5 .premium-world-clock__hours::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-5.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-5.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-5.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-hours-hand-5.svg");
 }
 .premium-world-clock__hand-5 .premium-world-clock__minutes::before {
-  -webkit-mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-5.svg");
-  mask-image: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-5.svg");
+  -webkit-mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-5.svg");
+  mask-image: url("/wp-content/plugins/premium-addons-for-elementor/assets/frontend/images/world-clock/analog-clock-min-hand-5.svg");
 }
 
 /**Digital Skins*/

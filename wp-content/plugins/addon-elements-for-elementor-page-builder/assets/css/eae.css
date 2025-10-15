@@ -1753,8 +1753,8 @@ img.mfp-img {
   font-weight: 800;
 }
 .eae-swiper-outer-wrapper .swiper-button-prev {
-  -webkit-mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
-  mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
+  -webkit-mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
+  mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-image: none;
@@ -1763,12 +1763,12 @@ img.mfp-img {
   margin-top: 0px;
 }
 .eae-swiper-outer-wrapper .swiper-container-rtl .swiper-button-prev {
-  -webkit-mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
-  mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
+  -webkit-mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
+  mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
 }
 .eae-swiper-outer-wrapper .swiper-button-next {
-  -webkit-mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
-  mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
+  -webkit-mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
+  mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-right.svg) no-repeat 100% 100%;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-image: none;
@@ -1777,8 +1777,8 @@ img.mfp-img {
   margin-top: 0px;
 }
 .eae-swiper-outer-wrapper .swiper-container-rtl .swiper-button-next {
-  -webkit-mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
-  mask: url(https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
+  -webkit-mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
+  mask: url(/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/arrow-left.svg) no-repeat 100% 100%;
 }
 /* .elementor-widget-wts-testimonial-slider */
 .eae-swiper-outer-wrapper
@@ -3723,13 +3723,13 @@ body.rtl .eae-layout-right .eae-tl-content-wrapper {
   width: 17px;
   height: 44px;
   overflow: hidden;
-  background-image: url("https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/digit-sep-svg.svg");
+  background-image: url("/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/digit-sep-svg.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-color: #4054b2;
 }
 [data-element_type="eae-evergreen-timer.skin4"] .digit {
-  background-image: url("https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/digits-svg-alpha.svg");
+  background-image: url("/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/digits-svg-alpha.svg");
   background-color: #4054b2;
 }
 

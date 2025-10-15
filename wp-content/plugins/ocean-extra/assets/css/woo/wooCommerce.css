@@ -115,7 +115,7 @@ del .amount { color: #555 }
 .woocommerce ins { text-decoration: none }
 
 /* star ratings*/
-@font-face { font-family: 'star'; src: url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.eot'); src: url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.eot#iefix') format('embedded-opentype'), url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.woff') format('woff'), url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.ttf') format('truetype'), url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.svg#star') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'star'; src: url('/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.eot'); src: url('/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.eot#iefix') format('embedded-opentype'), url('/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.woff') format('woff'), url('/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.ttf') format('truetype'), url('/wp-content/plugins/ocean-extra/assets/themes/oceanwp/assets/fonts/star/star.svg#star') format('svg'); font-weight: normal; font-style: normal; }
 .woocommerce p.stars a,
 .woocommerce .star-rating { overflow: hidden; position: relative; height: 1em; line-height: 1em; font-size: 14px; width: 5.4em; font-family: 'star'; }
 .woocommerce .star-rating:before { content: "\73\73\73\73\73"; color: #dfdbdf; float: left; top: 0; left: 0; position: absolute; }

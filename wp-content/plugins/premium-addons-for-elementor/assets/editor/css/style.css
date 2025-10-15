@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "pa-elements";
-	src: url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?1jmcw0");
+	src: url("/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?1jmcw0");
 	src:
-		url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?1jmcw0#iefix") format("embedded-opentype"),
-		url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?1jmcw0") format("truetype"),
-		url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?1jmcw0") format("woff"),
-		url("https://erickm-m.github.io/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?1jmcw0#pa-elements") format("svg");
+		url("/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?1jmcw0#iefix") format("embedded-opentype"),
+		url("/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?1jmcw0") format("truetype"),
+		url("/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?1jmcw0") format("woff"),
+		url("/wp-content/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?1jmcw0#pa-elements") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }

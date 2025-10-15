@@ -37,244 +37,244 @@
 }
 
 .eae-compare-table::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/comparison-table.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/comparison-table.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/comparison-table.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/comparison-table.svg'); 
 }
 
 .eae-info-circle::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-circle.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-circle.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-circle.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-circle.svg'); 
 }
 
 .eae-time-line::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/timeline.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/timeline.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/timeline.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/timeline.svg'); 
 }
 
 .eae-dual-button::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/dual-button.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/dual-button.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/dual-button.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/dual-button.svg'); 
 }
 
 .eae-advance-button::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg'); 
 }
 
 .eae-animated-text::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/animated-text.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/animated-text.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/animated-text.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/animated-text.svg'); 
 }
 
 .eae-modal-popup::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/popup.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/popup.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/popup.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/popup.svg'); 
 }
 
 .eae-progress-bar::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/progress-bar.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/progress-bar.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/progress-bar.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/progress-bar.svg'); 
 }
 
 .eae-flip-box::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/flipbox.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/flipbox.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/flipbox.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/flipbox.svg'); 
 }
 
 .eae-split-text::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/split-text.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/split-text.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/split-text.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/split-text.svg'); 
 }
 
 .eae-google-map::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-map.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-map.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-map.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-map.svg'); 
 }
 
 .eae-price-table::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg'); 
 }
 
 .eae-twitter-feed::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/twitter-feed.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/twitter-feed.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/twitter-feed.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/twitter-feed.svg'); 
 }
 
 .eae-post-list::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/post-list.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/post-list.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/post-list.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/post-list.svg'); 
 }
 
 .eae-shape-separator::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/shape-separator.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/shape-separator.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/shape-separator.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/shape-separator.svg'); 
 }
 
 .eae-text-separator::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/text-separator.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/text-separator.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/text-separator.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/text-separator.svg'); 
 }
 
 .eae-filterable-gallery::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/filterable-gallery.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/filterable-gallery.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/filterable-gallery.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/filterable-gallery.svg'); 
 }
 
 .eae-content-switcher::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-switcher.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-switcher.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-switcher.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-switcher.svg'); 
 }
 
 .eae-chart::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/charts.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/charts.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/charts.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/charts.svg'); 
 }
 
 .eae-thumbnail-slider::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg'); 
 }
 
 .eae-thumbnail-slider::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/thumbnail-slider.svg'); 
 }
 
 .eae-content-ticker::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-ticker.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-ticker.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-ticker.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/content-ticker.svg'); 
 }
 
 .eae-advance-button::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-button.svg'); 
 }
 
 .eae-radial-charts::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/radial-chart.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/radial-chart.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/radial-chart.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/radial-chart.svg'); 
 }
 
 .eae-image-accordion::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-accordion.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-accordion.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-accordion.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-accordion.svg'); 
 }
 
 .eae-faq::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/faq.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/faq.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/faq.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/faq.svg'); 
 }
 
 .eae-advanced-list::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-list.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-list.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-list.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-list.svg'); 
 }
 
 .eae-video-box::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-box.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-box.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-box.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-box.svg'); 
 }
 
 .eae-business-hours::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/business-hours.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/business-hours.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/business-hours.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/business-hours.svg'); 
 }
 
 .eae-instagram-feed::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/instagram.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/instagram.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/instagram.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/instagram.svg'); 
 }
 
 .eae-floating-elements::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/floating-elements.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/floating-elements.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/floating-elements.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/floating-elements.svg'); 
 }
 
 .eae-advance-price-table::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/price-table.svg'); 
 }
 
 .eae-add-to-calendar::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/add-to-calendar.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/add-to-calendar.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/add-to-calendar.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/add-to-calendar.svg'); 
 }
 
 .eae-advanced-heading::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-heading.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-heading.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-heading.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/advanced-heading.svg'); 
 }
 
 .eae-image-compare::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-compare.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-compare.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-compare.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-compare.svg'); 
 }
 
 .eae-team-members::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/team-members.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/team-members.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/team-members.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/team-members.svg'); 
 }
 
 .eae-data-table::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/data-table.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/data-table.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/data-table.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/data-table.svg'); 
 }
 
 .eae-image-scroll::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-scroll.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-scroll.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-scroll.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-scroll.svg'); 
 }
 
 .eae-video-gallery::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-gallery.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-gallery.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-gallery.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/video-gallery.svg'); 
 }
 .eae-image-stack::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-stack.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-stack.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-stack.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-stack.svg'); 
 }
 .eae-image-hotspot::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-hotspot.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-hotspot.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-hotspot.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/image-hotspot.svg'); 
 }
 .eae-devices::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/devices.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/devices.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/devices.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/devices.svg'); 
 }
 .eae-info-group::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-group.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-group.svg'); 
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-group.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/info-group.svg'); 
 }
 .eae-circular-progress::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/cicular-progress.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/cicular-progress.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/cicular-progress.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/cicular-progress.svg');
 }
 .eae-table-of-content::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/table-of-content.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/table-of-content.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/table-of-content.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/table-of-content.svg');
 }
 .eae-call-to-action::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/call-to-action.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/call-to-action.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/call-to-action.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/call-to-action.svg');
 }
 .eae-coupon-code::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/coupon-code.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/coupon-code.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/coupon-code.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/coupon-code.svg');
 }
 .eae-google-review::before {
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-review.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-review.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-review.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/google-review.svg');
 }
 .eae-testimonial-slider::before{
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/testimonial-slider.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/testimonial-slider.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/testimonial-slider.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/testimonial-slider.svg');
 }
 .eae-woo-products::before{
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-products.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-products.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-products.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-products.svg');
 }
 .eae-woo-category::before{
-    -webkit-mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-category.svg');
-	mask-image: url('https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-category.svg');
+    -webkit-mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-category.svg');
+	mask-image: url('/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/eae-icons/icons/woo-category.svg');
 }

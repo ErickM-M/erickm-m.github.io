@@ -12629,7 +12629,7 @@ select.wpr-category-select {
 }
 
 .story-with-background {
-    background-image: url('https://erickm-m.github.io/wp-content/plugins/royal-elementor-addons/assets/css/'');
+    background-image: url('/wp-content/plugins/royal-elementor-addons/assets/css/'');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

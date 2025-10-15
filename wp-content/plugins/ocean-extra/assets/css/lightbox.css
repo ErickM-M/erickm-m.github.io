@@ -97,7 +97,7 @@
   top: 50%;
   margin-top: -50px;
   cursor: pointer;
-  background: url(https://erickm-m.github.io/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/left.png) 50% 50% no-repeat;
+  background: url(/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/left.png) 50% 50% no-repeat;
   z-index: 17;
   display: none;
 }
@@ -110,7 +110,7 @@
   top: 50%;
   margin-top: -50px;
   cursor: pointer;
-  background: url(https://erickm-m.github.io/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/right.png) 50% 50% no-repeat;
+  background: url(/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/right.png) 50% 50% no-repeat;
   z-index: 17;
   display: none;
 }
@@ -142,7 +142,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url(https://erickm-m.github.io/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/close.png) 50% 50% no-repeat;
+  background: url(/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/close.png) 50% 50% no-repeat;
 }
 
 .chocolat-wrapper .chocolat-bottom {
@@ -180,7 +180,7 @@
 .chocolat-wrapper .chocolat-fullscreen {
   width: 16px;
   height: 40px;
-  background: url(https://erickm-m.github.io/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/fullscreen.png) 50% 50% no-repeat;
+  background: url(/wp-content/plugins/ocean-extra/themes/oceanwp/assets/img/fullscreen.png) 50% 50% no-repeat;
   display: block;
   margin: auto;
   cursor: pointer;

@@ -16,7 +16,7 @@
 
 .vegas-overlay {
     opacity: .5;
-    //background: transparent url("https://erickm-m.github.io/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/overlays/02.png") center center repeat;
+    //background: transparent url("/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/overlays/02.png") center center repeat;
 }
 
 .vegas-timer {

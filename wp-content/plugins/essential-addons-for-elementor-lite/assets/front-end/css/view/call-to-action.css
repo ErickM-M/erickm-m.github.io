@@ -28,7 +28,7 @@
   background: #f4f4f4;
 }
 .eael-call-to-action.bg-img {
-  background-image: url("https://erickm-m.github.io/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/img/bg.jpg");
+  background-image: url("/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

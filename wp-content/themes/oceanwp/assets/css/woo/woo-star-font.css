@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 Woo Star Font
 -------------------------------------------------------------------*/
-@font-face { font-family: 'star'; src: url('https://erickm-m.github.io/wp-content/themes/oceanwp/assets/fonts/star/star.eot'); src: url('https://erickm-m.github.io/wp-content/themes/oceanwp/assets/fonts/star/star.eot#iefix') format('embedded-opentype'), url('https://erickm-m.github.io/wp-content/themes/oceanwp/assets/fonts/star/star.woff') format('woff'), url('https://erickm-m.github.io/wp-content/themes/oceanwp/assets/fonts/star/star.ttf') format('truetype'), url('https://erickm-m.github.io/wp-content/themes/oceanwp/assets/fonts/star/star.svg#star') format('svg'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'star'; src: url('/wp-content/themes/oceanwp/assets/fonts/star/star.eot'); src: url('/wp-content/themes/oceanwp/assets/fonts/star/star.eot#iefix') format('embedded-opentype'), url('/wp-content/themes/oceanwp/assets/fonts/star/star.woff') format('woff'), url('/wp-content/themes/oceanwp/assets/fonts/star/star.ttf') format('truetype'), url('/wp-content/themes/oceanwp/assets/fonts/star/star.svg#star') format('svg'); font-weight: normal; font-style: normal; font-display: swap; }
 
 #reviews .comment-reply-title {
     display: none;

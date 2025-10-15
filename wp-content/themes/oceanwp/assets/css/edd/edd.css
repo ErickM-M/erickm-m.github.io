@@ -897,7 +897,7 @@
 }
 
 #edd_checkout_form_wrap input.edd-input.card-number.valid {
-  background-image: url(https://erickm-m.github.io/wp-content/themes/oceanwp/assets/css/edd/images/tick.png);
+  background-image: url(/wp-content/themes/oceanwp/assets/css/edd/images/tick.png);
   background-repeat: no-repeat;
   background-position: 98% 50%;
 }
@@ -920,19 +920,19 @@
 }
 
 #edd_checkout_form_wrap span.card-type.visa {
-  background: url(https://erickm-m.github.io/wp-content/themes/oceanwp/assets/css/edd/images/icons/visa.png) no-repeat;
+  background: url(/wp-content/themes/oceanwp/assets/css/edd/images/icons/visa.png) no-repeat;
 }
 
 #edd_checkout_form_wrap span.card-type.mastercard {
-  background: url(https://erickm-m.github.io/wp-content/themes/oceanwp/assets/css/edd/images/icons/mastercard.png) no-repeat;
+  background: url(/wp-content/themes/oceanwp/assets/css/edd/images/icons/mastercard.png) no-repeat;
 }
 
 #edd_checkout_form_wrap span.card-type.discover {
-  background: url(https://erickm-m.github.io/wp-content/themes/oceanwp/assets/css/edd/images/icons/discover.png) no-repeat;
+  background: url(/wp-content/themes/oceanwp/assets/css/edd/images/icons/discover.png) no-repeat;
 }
 
 #edd_checkout_form_wrap span.card-type.amex {
-  background: url(https://erickm-m.github.io/wp-content/themes/oceanwp/assets/css/edd/images/icons/americanexpress.png) no-repeat;
+  background: url(/wp-content/themes/oceanwp/assets/css/edd/images/icons/americanexpress.png) no-repeat;
 }
 
 #edd_checkout_form_wrap .edd-cart-ajax {

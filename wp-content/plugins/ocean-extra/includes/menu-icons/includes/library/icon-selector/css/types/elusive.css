@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Elusive-Icons';
-	src:url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.eot');
-	src:url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.eot#iefix') format('embedded-opentype'),
-		url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.ttf') format('truetype'),
-		url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.woff') format('woff'),
-		url('https://erickm-m.github.io/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.svg#Elusive-Icons') format('svg');
+	src:url('/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.eot');
+	src:url('/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.eot#iefix') format('embedded-opentype'),
+		url('/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.ttf') format('truetype'),
+		url('/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.woff') format('woff'),
+		url('/wp-content/plugins/ocean-extra/includes/menu-icons/includes/library/icon-selector/css/types/Elusive-Icons.svg#Elusive-Icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
