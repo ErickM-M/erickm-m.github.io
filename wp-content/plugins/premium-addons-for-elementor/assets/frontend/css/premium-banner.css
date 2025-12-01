@@ -1242,7 +1242,7 @@
     display: none;
   }
 }
-/*RTL Compatability**/
+/* RTL Compatibility */
 .rtl .premium-banner-ib,
 .rtl .wpb_column > .wpb_wrapper .premium-banner-ib {
   margin-bottom: 0px;

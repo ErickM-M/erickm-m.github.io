@@ -960,25 +960,20 @@ html:not([dir="rtl"]) .premium-promotion-pro-btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-bottom: 5px;
 }
 
 .premium-promote-box.addon-promotion .premium-promote-ctas {
 	flex-direction: column;
 }
 
-.premium-promote-ctas > a.elementor-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .premium-promote-box .elementor-button {
-	color: #fff;
-	padding: 10px;
+	color: #000 !important;
+	padding: 12px;
 	border: none;
-	box-shadow:
-		0 0 1px rgba(0, 0, 0, 0.1),
-		0 2px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	line-height: 1;
+	transition: all 0.3s ease-in-out;
 }
 
 .widget-box .elementor-button {
@@ -986,11 +981,20 @@ html:not([dir="rtl"]) .premium-promotion-pro-btn {
 }
 
 .premium-promote-ctas .elementor-button.premium-promote-demo {
-	background-color: #252c59;
+	background-color: rgba(207, 211, 215, 0.35);
+	border: 1px solid #cfd3d7;
+}
+
+.premium-promote-ctas .elementor-button.premium-promote-demo:hover {
+	background-color: rgba(207, 211, 215, 0.8);
 }
 
 .premium-promote-ctas .elementor-button.premium-promote-upgrade {
-	background-color: #ff6000;
+	background-color: rgba(207, 211, 215, 0.8);
+}
+
+.premium-promote-ctas .elementor-button.premium-promote-upgrade:hover {
+	background-color: rgba(207, 211, 215, 1);
 }
 
 .addon-promotion .elementor-button.premium-promote-upgrade {

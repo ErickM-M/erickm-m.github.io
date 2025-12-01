@@ -8,31 +8,14 @@
 			return;
 		}
 
-		// using the same classes in the off-canvas widget.
-		$('html').addClass('msection-html');
-
-		var $bodyInnerWrap = $("body .premium-magic-section-body-inner"),
-			triggerEvent = settings.trigger,
-			isHidden = true,
+		var triggerEvent = settings.trigger,
 			type = settings.type,
 			id = $scope.data('id'),
-			style = settings.style,
 			hoverTimeout,
 			paodometer,
 			paSubtotalOdometer;
 
-		// shouldn't this be if it's a slide menu only?
-		if ($(".premium-magic-section-body-inner").length < 1)
-			$("body").wrapInner('<div class="premium-magic-section-body-inner" />');
-
-		//Put the overlay on top and make sure it only one overlay per widget is added.
-		$('.premium-magic-section-body-inner > .pa-woo-mc__overlay-' + id).remove();
-		$('.premium-magic-section-body-inner').prepend($scope.find('.pa-woo-mc__overlay'));
-
 		$scope.find('.pa-woo-mc__inner-container').off('click.paToggleMiniCart mouseenter.paToggleMiniCart mouseleave.paToggleMiniCart');
-
-		// counting Effect.
-		getWraptoOrg(10);
 
 		initWidgetEvents();
 
@@ -77,6 +60,19 @@
 				}, 0);
 			}
 		});
+
+		if (settings.cssSelector) {
+			var cartSelector = settings.cssSelector,
+				selectorName = cartSelector.replace(/^[.#]/, '');
+
+			$(cartSelector).off('click.paCustomTrigger').on('click.paCustomTrigger', function (e) {
+				e.preventDefault();
+
+				$('.elementor-widget-premium-mini-cart .pa-woo-mc__outer-container[data-cart-selector="' + selectorName + '"]')
+					.find('.pa-woo-mc__inner-container')
+					.trigger('click.paToggleMiniCart');
+			});
+		}
 
 		/**Helper Function */
 
@@ -157,62 +153,25 @@
 			}
 		}
 
-		/**Restores the body to its initial state */
-		function getWraptoOrg(duration) {
-
-			if (!duration)
-				duration = 500;
-
-			$('body').addClass('animating');
-
-			$bodyInnerWrap.css('transform', 'none');
-
-			$('html').css('height', 'auto');
-
-			setTimeout(function () {
-
-				$('html').removeClass('offcanvas-open');
-				$('body').removeClass('animating');
-			}, duration);
-
-		}
 
 		/** Handles Mini Cart Display */
 		function toggleMiniCart(e) {
 			if ('hover' === triggerEvent) {
 				e.stopPropagation();
-
 				clearTimeout(hoverTimeout);
-				$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('premium-addons__v-hidden').addClass('pa-woo-mc__open');
+
+				$scope.find('.pa-woo-mc__content-wrapper-' + id)
+					.removeClass('premium-addons__v-hidden')
+					.addClass('pa-woo-mc__open');
+
 			} else {
-
-				if ('menu' === type) {
-					$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('premium-addons__v-hidden').toggleClass('pa-woo-mc__open');
-
-				} else {
-					if (isHidden) {
-						$scope.find('.pa-woo-mc__content-wrapper-' + id).css('display', 'flex');
-
-						$('html').css({
-							'height': '100%',
-							// 'overflow-y': 'scroll'
-						});
-
-						$('html').addClass('offcanvas-open');
-
-						//Show overlay.
-						$(".pa-woo-mc__overlay-" + id).removeClass("premium-addons__v-hidden");
-
-						//Show the content if reveal or similar effects.
-						$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('premium-addons__v-hidden');
-
-						$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('pa-woo-mc__anim-' + style);
-
-						setTimeout(function () {
-							isHidden = false;
-						}, 550);
-					}
+				if ('slide' === type) {
+					$(".pa-woo-mc__overlay-" + id).removeClass("premium-addons__v-hidden"); // show overlay for slide type.
 				}
+
+				$scope.find('.pa-woo-mc__content-wrapper-' + id)
+					.removeClass('premium-addons__v-hidden')
+					.toggleClass('pa-woo-mc__open');
 			}
 
 			// refresh carousel on opening the mini cart.
@@ -220,7 +179,6 @@
 				$scope.find('.pa-woo-mc__cross-sells').slick('setPosition');
 			}
 		}
-
 		/**
 		 * Appends a tax label to a given subtotal.
 		 */
@@ -305,15 +263,22 @@
 				e.stopPropagation();
 
 				var $input = $(this).parent().find('.pa-woo-mc__input')[0],
+					allowBackorders = $scope.hasClass('pa-allow-bkorders-yes'),
 					itemStock = parseInt($($input).attr('max')),
 					currentVal = parseInt($($input).val());
 
 				if ($(this).hasClass('plus')) {
-					if (currentVal >= itemStock) {
-						$(this).parents('.pa-woo-mc__item-wrapper').find('.pa-woo-mc__item-notice').text(PAWooMCartSettings.stock_msg + itemStock);
-					} else {
+					// backorders allowed || current value less than max stock.
+					// we check if item stock is NAN, to cover the case where no stock is specified for a product.
+					if (allowBackorders || currentVal < itemStock || isNaN(itemStock)) {
+						if (allowBackorders) {
+							$($input).removeAttr('max');
+						}
+
 						$input.stepUp();
 						$($input).trigger('change');
+					} else {
+						$(this).parents('.pa-woo-mc__item-wrapper').find('.pa-woo-mc__item-notice').text(PAWooMCartSettings.stock_msg + itemStock);
 					}
 
 				} else {
@@ -441,6 +406,7 @@
 			} else {
 				// hover => mini window.
 				$scope.find('.pa-woo-mc__inner-container').on('mouseenter.paToggleMiniCart', toggleMiniCart);
+
 				$scope.on('mouseleave.paToggleMiniCart', function (e) {
 
 					hoverTimeout = setTimeout(function () {
@@ -486,16 +452,18 @@
 			});
 
 			//On Click outside, close everything.
+			$("body").off("click.paCloseMC");
 			if (settings.clickOutside) {
 
-				$("body").on("click", function (event) {
+				$("body").on("click.paCloseMC", function (event) {
 					var mcContent = ".premium-tabs-nav-list-item, .pa-woo-mc__content-wrapper, .pa-woo-mc__content-wrapper *, .pa-woo-mc__inner-container, .pa-woo-mc__inner-container *";
 
-					if (!$(event.target).is($(mcContent))) {
+					if (!$(event.target).is(mcContent)) {
 						if ('menu' === type) {
 							$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('pa-woo-mc__open');
 						} else {
-							!isHidden && $scope.find(".pa-woo-mc__close-button").trigger("click");
+							$(".pa-woo-mc__overlay-" + id).addClass("premium-addons__v-hidden");
+							$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('pa-woo-mc__open');
 						}
 					}
 				});
@@ -506,15 +474,7 @@
 			 */
 			$scope.find(".pa-woo-mc__close-button").on("click", function () {
 				$(".pa-woo-mc__overlay-" + id).addClass("premium-addons__v-hidden");
-
-				//Add the default styling again.
-				$scope.find('.pa-woo-mc__content-wrapper-' + id).addClass('pa-woo-mc__anim-' + style);
-
-				setTimeout(function () {
-					isHidden = true;
-					$scope.find('.pa-woo-mc__content-wrapper-' + id).css('display', 'none');
-				}, 500);
-
+				$scope.find('.pa-woo-mc__content-wrapper-' + id).removeClass('pa-woo-mc__open');
 			});
 
 			if (settings.coupon) {

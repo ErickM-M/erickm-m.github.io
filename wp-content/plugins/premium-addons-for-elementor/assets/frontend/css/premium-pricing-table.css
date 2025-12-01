@@ -286,6 +286,48 @@
   order: 2;
 }
 
+.pa-bt-effect__effect-1 .premium-pricing-price-container {
+  gap: 3%;
+}
+
+.premium-pricing-reveal-wrapper {
+  position: relative;
+}
+.premium-pricing-reveal-wrapper .premium-pricing-slashed-price-value {
+  font-size: 30px;
+}
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper {
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(-5deg) translateY(0);
+  -ms-transform: rotate(-5deg) translateY(0);
+  transform: rotate(-5deg) translateY(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper .premium-pricing-price-value,
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper .premium-pricing-price-currency {
+  font-size: 30px;
+}
+
+.premium-pricing-table-container:hover .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(-25deg) translateY(-80%);
+  -ms-transform: rotate(-25deg) translateY(-80%);
+  transform: rotate(-25deg) translateY(-80%);
+}
+
 .rtl .premium-badge-stripe .corner {
   -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-10px);
   -ms-transform: rotate(-45deg) translateY(-50%) translateX(-10px);
@@ -293,4 +335,14 @@
 }
 .rtl .premium-badge-left.premium-badge-triangle span {
   left: 0;
+}
+.rtl .premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(5deg) translateY(0);
+  -ms-transform: rotate(5deg) translateY(0);
+  transform: rotate(5deg) translateY(0);
+}
+.rtl .premium-pricing-table-container:hover .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(25deg) translateY(-80%);
+  -ms-transform: rotate(25deg) translateY(-80%);
+  transform: rotate(25deg) translateY(-80%);
 }

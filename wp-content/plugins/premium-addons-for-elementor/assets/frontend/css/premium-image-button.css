@@ -13,6 +13,25 @@
 .premium-image-button .premium-button-style6-bg, .premium-image-button.premium-button-style6:before, .premium-image-button:not(.premium-image-button-style6):hover {
   background-color: #54595f;
 }
+.premium-image-button.premium-image-button-none {
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+.premium-image-button.premium-image-button-none::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: inherit;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+.premium-image-button.premium-image-button-none:hover::after {
+  opacity: 1;
+}
+.premium-image-button.premium-image-button-none:hover {
+  background-image: none !important;
+}
 
 /*Default background for slide styles*/
 .premium-image-button-style4-icon-wrapper,

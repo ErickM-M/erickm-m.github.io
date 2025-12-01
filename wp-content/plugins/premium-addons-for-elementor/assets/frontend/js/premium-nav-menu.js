@@ -24,7 +24,8 @@
 			stickyIndex = 'stickyPos' + $scope.data('id'),
 			stickyWidthIndex = 'stickyWidth' + $scope.data('id'),
 			disablePageScroll = $scope.hasClass('premium-disable-scroll-yes') ? true : false,
-			delay = getComputedStyle($scope[0]).getPropertyValue('--pa-mega-menu-delay') || 300,
+			// delay = getComputedStyle($scope[0]).getPropertyValue('--pa-mega-menu-delay') || 300,
+			delay = $scope[0].getAttribute('--pa-mega-menu-delay') || 300,
 			renderMobileMenu = settings.renderMobileMenu,
 			isEditMode = elementorFrontend.isEditMode(),
 			hoverTimeout;

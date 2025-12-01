@@ -1,4 +1,8 @@
 /************* Premium Mini Cart *************/
+.elementor-widget-premium-mini-cart {
+  --pa-slide-mc-width: 360px;
+}
+
 .pa-woo-mc__outer-container, .pa-woo-mc__inner-container, .pa-woo-mc__icon-wrapper, .pa-woo-mc__text-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7,7 +11,7 @@
 .pa-woo-mc__outer-container {
   gap: 5px;
 }
-.pa-woo-mc__content-wrapper .pa-woo-mc__outer-container a:hover {
+.pa-woo-mc__content-wrapper a:hover, .pa-woo-mc__outer-container a:hover {
   color: currentColor;
 }
 .pa-woo-mc__inner-container {
@@ -271,11 +275,12 @@
   letter-spacing: 0.3px;
 }
 .pa-woo-mc__overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 999;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 .pa-woo-mc__close-button {
   cursor: pointer;
@@ -310,14 +315,14 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 360px;
+  width: var(--pa-slide-mc-width, 360px);
+  overflow: hidden;
+  border-inline: 1px solid #dcdcdc;
+  background: #fff;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-  overflow: hidden;
-  border-inline: 1px solid #dcdcdc;
-  background: #fff;
 }
 .pa-woo-mc__content-wrapper.pa-hide-content .pa-woo-mc__empty-mc,
 .pa-woo-mc__content-wrapper.pa-hide-content .pa-woo-mc__cart-footer,
@@ -325,11 +330,22 @@
 .pa-woo-mc__content-wrapper.pa-hide-content .pa-woo-mc__progressbar-wrapper {
   display: none;
 }
+.pa-woo-mc__content-wrapper:not(.pa-hide-content) .pa-woo-mc__items-wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  row-gap: 20px;
+  background: #fff;
+}
 .pa-woo-mc__content-wrapper.pa-woo-mc__slide {
   position: fixed;
   height: 100vh;
   top: 0;
-  display: none;
+  overflow-x: hidden;
+}
+.pa-woo-mc__content-wrapper.pa-woo-mc__slide.pa-woo-mc__open {
+  -webkit-transform: translateX(0) !important;
+  -ms-transform: translateX(0) !important;
+  transform: translateX(0) !important;
 }
 .pa-woo-mc__content-wrapper.pa-woo-mc__menu {
   position: absolute;
@@ -377,11 +393,7 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  row-gap: 20px;
   overflow-y: auto;
-  background: #fff;
 }
 .pa-woo-mc__item-wrapper {
   display: -webkit-flex;
@@ -466,8 +478,6 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-.pa-woo-mc__price-row {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -1121,17 +1131,6 @@
   -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
-.pa-woo-mc__anim-overlay {
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-.pa-woo-mc__anim-overlay.left {
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-}
-.pa-woo-mc__anim-overlay.right {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
 
 .pa-hide-empty-badge-yes .pa-hide-badge {
   display: none;
@@ -1249,10 +1248,6 @@
 }
 
 /** Common With the off-canvas widget*/
-html.msection-html {
-  margin-top: 0 !important;
-}
-
 html.offcanvas-open {
   min-height: 100vh;
 }
@@ -1277,6 +1272,7 @@ svg:not(:root).pa-woo-mc__qty-btn {
 
 @media (max-width: 1024px) {
   .pa-woo-mc__content-wrapper {
+    --pa-slide-mc-width: 50vw;
     width: 50vw;
   }
   .pa-woo-mc-tablet__mw-center .pa-woo-mc__menu {
@@ -1382,6 +1378,7 @@ svg:not(:root).pa-woo-mc__qty-btn {
 @media (max-width: 767px) {
   .pa-woo-mc__content-wrapper {
     width: 100vw;
+    --pa-slide-mc-width: 100vw;
   }
   .pa-woo-mc-mobile__mw-center .pa-woo-mc__menu {
     -webkit-transform: translateX(-50%);

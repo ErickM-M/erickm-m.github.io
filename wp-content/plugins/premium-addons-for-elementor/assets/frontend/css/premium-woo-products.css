@@ -1093,6 +1093,8 @@ html.premium-woo-qv-opened body {
 .premium-woo-qv-image-slider img {
   object-fit: cover;
   width: 100%;
+  display: block;
+  height: auto;
 }
 .premium-woo-qv-image-slider .flex-direction-nav {
   margin: 0;

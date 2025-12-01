@@ -1814,7 +1814,7 @@
   }
 }
 
-/*RTL Compatability**/
+/* RTL Compatibility */
 
 .rtl .premium-banner-ib,
 .rtl .wpb_column > .wpb_wrapper .premium-banner-ib {
@@ -5784,6 +5784,29 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   background-color: #54595f;
 }
 
+.premium-image-button.premium-image-button-none {
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.premium-image-button.premium-image-button-none::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: inherit;
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.premium-image-button.premium-image-button-none:hover::after {
+  opacity: 1;
+}
+
+.premium-image-button.premium-image-button-none:hover {
+  background-image: none !important;
+}
+
 /*Default background for slide styles*/
 
 .premium-image-button-style4-icon-wrapper,
@@ -7669,6 +7692,10 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
 
 /************* Premium Mini Cart *************/
 
+.elementor-widget-premium-mini-cart {
+  --pa-slide-mc-width: 360px;
+}
+
 .pa-woo-mc__outer-container,
 .pa-woo-mc__inner-container,
 .pa-woo-mc__icon-wrapper,
@@ -7682,7 +7709,8 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   gap: 5px;
 }
 
-.pa-woo-mc__content-wrapper .pa-woo-mc__outer-container a:hover {
+.pa-woo-mc__content-wrapper a:hover,
+.pa-woo-mc__outer-container a:hover {
   color: currentColor;
 }
 
@@ -8001,11 +8029,12 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
 }
 
 .pa-woo-mc__overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
   z-index: 999;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .pa-woo-mc__close-button {
@@ -8044,14 +8073,14 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 360px;
+  width: var(--pa-slide-mc-width, 360px);
+  overflow: hidden;
+  border-inline: 1px solid #dcdcdc;
+  background: #fff;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-  overflow: hidden;
-  border-inline: 1px solid #dcdcdc;
-  background: #fff;
 }
 
 .pa-woo-mc__content-wrapper.pa-hide-content .pa-woo-mc__empty-mc,
@@ -8061,11 +8090,24 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   display: none;
 }
 
+.pa-woo-mc__content-wrapper:not(.pa-hide-content) .pa-woo-mc__items-wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  row-gap: 20px;
+  background: #fff;
+}
+
 .pa-woo-mc__content-wrapper.pa-woo-mc__slide {
   position: fixed;
   height: 100vh;
   top: 0;
-  display: none;
+  overflow-x: hidden;
+}
+
+.pa-woo-mc__content-wrapper.pa-woo-mc__slide.pa-woo-mc__open {
+  -webkit-transform: translateX(0) !important;
+  -ms-transform: translateX(0) !important;
+  transform: translateX(0) !important;
 }
 
 .pa-woo-mc__content-wrapper.pa-woo-mc__menu {
@@ -8122,11 +8164,7 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  row-gap: 20px;
   overflow-y: auto;
-  background: #fff;
 }
 
 .pa-woo-mc__item-wrapper {
@@ -9022,20 +9060,6 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
   transform: translateX(0%);
 }
 
-.pa-woo-mc__anim-overlay {
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.pa-woo-mc__anim-overlay.left {
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
-}
-
-.pa-woo-mc__anim-overlay.right {
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
-
 .pa-hide-empty-badge-yes .pa-hide-badge {
   display: none;
 }
@@ -9156,10 +9180,6 @@ ul[data-list-animation*=animated-] .premium-bullet-list-divider-inline {
 
 /** Common With the off-canvas widget*/
 
-html.msection-html {
-  margin-top: 0 !important;
-}
-
 html.offcanvas-open {
   min-height: 100vh;
 }
@@ -9186,6 +9206,7 @@ svg:not(:root).pa-woo-mc__qty-btn {
 
 @media (max-width: 1024px) {
   .pa-woo-mc__content-wrapper {
+    --pa-slide-mc-width: 50vw;
     width: 50vw;
   }
 
@@ -9320,6 +9341,7 @@ svg:not(:root).pa-woo-mc__qty-btn {
 @media (max-width: 767px) {
   .pa-woo-mc__content-wrapper {
     width: 100vw;
+    --pa-slide-mc-width: 100vw;
   }
 
   .pa-woo-mc-mobile__mw-center .pa-woo-mc__menu {
@@ -13623,6 +13645,51 @@ body:not(.rtl) .premium-reversed-yes.premium-ticker-pointer-yes:not(.premium-pos
   order: 2;
 }
 
+.pa-bt-effect__effect-1 .premium-pricing-price-container {
+  gap: 3%;
+}
+
+.premium-pricing-reveal-wrapper {
+  position: relative;
+}
+
+.premium-pricing-reveal-wrapper .premium-pricing-slashed-price-value {
+  font-size: 30px;
+}
+
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper {
+  padding: 5px 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: rotate(-5deg) translateY(0);
+  -ms-transform: rotate(-5deg) translateY(0);
+  transform: rotate(-5deg) translateY(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper .premium-pricing-price-value,
+.premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper .premium-pricing-price-currency {
+  font-size: 30px;
+}
+
+.premium-pricing-table-container:hover .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(-25deg) translateY(-80%);
+  -ms-transform: rotate(-25deg) translateY(-80%);
+  transform: rotate(-25deg) translateY(-80%);
+}
+
 .rtl .premium-badge-stripe .corner {
   -webkit-transform: rotate(-45deg) translateY(-50%) translateX(-10px);
   -ms-transform: rotate(-45deg) translateY(-50%) translateX(-10px);
@@ -13631,6 +13698,18 @@ body:not(.rtl) .premium-reversed-yes.premium-ticker-pointer-yes:not(.premium-pos
 
 .rtl .premium-badge-left.premium-badge-triangle span {
   left: 0;
+}
+
+.rtl .premium-pricing-reveal-wrapper .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(5deg) translateY(0);
+  -ms-transform: rotate(5deg) translateY(0);
+  transform: rotate(5deg) translateY(0);
+}
+
+.rtl .premium-pricing-table-container:hover .premium-pricing-actual-wrapper {
+  -webkit-transform: rotate(25deg) translateY(-80%);
+  -ms-transform: rotate(25deg) translateY(-80%);
+  transform: rotate(25deg) translateY(-80%);
 }
 
 /**************** Premium Progress Bar ****************/
@@ -16179,345 +16258,345 @@ body:not(.rtl) .premium-reversed-yes.premium-ticker-pointer-yes:not(.premium-pos
 
 @-webkit-keyframes pa-noise-anim-1 {
   0% {
-    clip: rect(52px, 9999px, 99px, 0);
+    clip: rect(52px, 9999px, 113px, 0);
   }
 
   5% {
-    clip: rect(88px, 9999px, 210px, 0);
+    clip: rect(88px, 9999px, 88px, 0);
   }
 
   10% {
-    clip: rect(81px, 9999px, 262px, 0);
+    clip: rect(81px, 9999px, 130px, 0);
   }
 
   15% {
-    clip: rect(38px, 9999px, 288px, 0);
+    clip: rect(38px, 9999px, 156px, 0);
   }
 
   20% {
-    clip: rect(62px, 9999px, 97px, 0);
+    clip: rect(62px, 9999px, 202px, 0);
   }
 
   25% {
-    clip: rect(5px, 9999px, 132px, 0);
+    clip: rect(5px, 9999px, 2px, 0);
   }
 
   30% {
-    clip: rect(9px, 9999px, 112px, 0);
+    clip: rect(9px, 9999px, 288px, 0);
   }
 
   35% {
-    clip: rect(17px, 9999px, 184px, 0);
+    clip: rect(17px, 9999px, 126px, 0);
   }
 
   40% {
-    clip: rect(97px, 9999px, 11px, 0);
+    clip: rect(97px, 9999px, 239px, 0);
   }
 
   45% {
-    clip: rect(9px, 9999px, 98px, 0);
+    clip: rect(9px, 9999px, 167px, 0);
   }
 
   50% {
-    clip: rect(94px, 9999px, 257px, 0);
+    clip: rect(94px, 9999px, 153px, 0);
   }
 
   55% {
-    clip: rect(53px, 9999px, 15px, 0);
+    clip: rect(53px, 9999px, 256px, 0);
   }
 
   60% {
-    clip: rect(2px, 9999px, 5px, 0);
+    clip: rect(2px, 9999px, 249px, 0);
   }
 
   65% {
-    clip: rect(24px, 9999px, 19px, 0);
+    clip: rect(24px, 9999px, 35px, 0);
   }
 
   70% {
-    clip: rect(45px, 9999px, 238px, 0);
+    clip: rect(45px, 9999px, 210px, 0);
   }
 
   75% {
-    clip: rect(75px, 9999px, 284px, 0);
+    clip: rect(75px, 9999px, 56px, 0);
   }
 
   80% {
-    clip: rect(9px, 9999px, 60px, 0);
+    clip: rect(9px, 9999px, 264px, 0);
   }
 
   85% {
-    clip: rect(56px, 9999px, 23px, 0);
+    clip: rect(56px, 9999px, 19px, 0);
   }
 
   90% {
-    clip: rect(53px, 9999px, 72px, 0);
+    clip: rect(53px, 9999px, 132px, 0);
   }
 
   95% {
-    clip: rect(86px, 9999px, 112px, 0);
+    clip: rect(86px, 9999px, 62px, 0);
   }
 
   100% {
-    clip: rect(63px, 9999px, 78px, 0);
+    clip: rect(63px, 9999px, 108px, 0);
   }
 }
 
 @keyframes pa-noise-anim-1 {
   0% {
-    clip: rect(52px, 9999px, 99px, 0);
+    clip: rect(52px, 9999px, 113px, 0);
   }
 
   5% {
-    clip: rect(88px, 9999px, 210px, 0);
+    clip: rect(88px, 9999px, 88px, 0);
   }
 
   10% {
-    clip: rect(81px, 9999px, 262px, 0);
+    clip: rect(81px, 9999px, 130px, 0);
   }
 
   15% {
-    clip: rect(38px, 9999px, 288px, 0);
+    clip: rect(38px, 9999px, 156px, 0);
   }
 
   20% {
-    clip: rect(62px, 9999px, 97px, 0);
+    clip: rect(62px, 9999px, 202px, 0);
   }
 
   25% {
-    clip: rect(5px, 9999px, 132px, 0);
+    clip: rect(5px, 9999px, 2px, 0);
   }
 
   30% {
-    clip: rect(9px, 9999px, 112px, 0);
+    clip: rect(9px, 9999px, 288px, 0);
   }
 
   35% {
-    clip: rect(17px, 9999px, 184px, 0);
+    clip: rect(17px, 9999px, 126px, 0);
   }
 
   40% {
-    clip: rect(97px, 9999px, 11px, 0);
+    clip: rect(97px, 9999px, 239px, 0);
   }
 
   45% {
-    clip: rect(9px, 9999px, 98px, 0);
+    clip: rect(9px, 9999px, 167px, 0);
   }
 
   50% {
-    clip: rect(94px, 9999px, 257px, 0);
+    clip: rect(94px, 9999px, 153px, 0);
   }
 
   55% {
-    clip: rect(53px, 9999px, 15px, 0);
+    clip: rect(53px, 9999px, 256px, 0);
   }
 
   60% {
-    clip: rect(2px, 9999px, 5px, 0);
+    clip: rect(2px, 9999px, 249px, 0);
   }
 
   65% {
-    clip: rect(24px, 9999px, 19px, 0);
+    clip: rect(24px, 9999px, 35px, 0);
   }
 
   70% {
-    clip: rect(45px, 9999px, 238px, 0);
+    clip: rect(45px, 9999px, 210px, 0);
   }
 
   75% {
-    clip: rect(75px, 9999px, 284px, 0);
+    clip: rect(75px, 9999px, 56px, 0);
   }
 
   80% {
-    clip: rect(9px, 9999px, 60px, 0);
+    clip: rect(9px, 9999px, 264px, 0);
   }
 
   85% {
-    clip: rect(56px, 9999px, 23px, 0);
+    clip: rect(56px, 9999px, 19px, 0);
   }
 
   90% {
-    clip: rect(53px, 9999px, 72px, 0);
+    clip: rect(53px, 9999px, 132px, 0);
   }
 
   95% {
-    clip: rect(86px, 9999px, 112px, 0);
+    clip: rect(86px, 9999px, 62px, 0);
   }
 
   100% {
-    clip: rect(63px, 9999px, 78px, 0);
+    clip: rect(63px, 9999px, 108px, 0);
   }
 }
 
 @-webkit-keyframes pa-noise-anim-2 {
   0% {
-    clip: rect(14px, 9999px, 221px, 0);
+    clip: rect(14px, 9999px, 160px, 0);
   }
 
   5% {
-    clip: rect(19px, 9999px, 296px, 0);
+    clip: rect(19px, 9999px, 155px, 0);
   }
 
   10% {
-    clip: rect(17px, 9999px, 97px, 0);
+    clip: rect(17px, 9999px, 212px, 0);
   }
 
   15% {
-    clip: rect(46px, 9999px, 24px, 0);
+    clip: rect(46px, 9999px, 288px, 0);
   }
 
   20% {
-    clip: rect(28px, 9999px, 300px, 0);
+    clip: rect(28px, 9999px, 193px, 0);
   }
 
   25% {
-    clip: rect(64px, 9999px, 279px, 0);
+    clip: rect(64px, 9999px, 174px, 0);
   }
 
   30% {
-    clip: rect(58px, 9999px, 160px, 0);
+    clip: rect(58px, 9999px, 278px, 0);
   }
 
   35% {
-    clip: rect(18px, 9999px, 282px, 0);
+    clip: rect(18px, 9999px, 57px, 0);
   }
 
   40% {
-    clip: rect(61px, 9999px, 155px, 0);
+    clip: rect(61px, 9999px, 61px, 0);
   }
 
   45% {
-    clip: rect(63px, 9999px, 97px, 0);
+    clip: rect(63px, 9999px, 161px, 0);
   }
 
   50% {
-    clip: rect(59px, 9999px, 266px, 0);
+    clip: rect(59px, 9999px, 101px, 0);
   }
 
   55% {
-    clip: rect(20px, 9999px, 176px, 0);
+    clip: rect(20px, 9999px, 113px, 0);
   }
 
   60% {
-    clip: rect(49px, 9999px, 58px, 0);
+    clip: rect(49px, 9999px, 146px, 0);
   }
 
   65% {
-    clip: rect(70px, 9999px, 5px, 0);
+    clip: rect(70px, 9999px, 275px, 0);
   }
 
   70% {
-    clip: rect(70px, 9999px, 44px, 0);
+    clip: rect(70px, 9999px, 94px, 0);
   }
 
   75% {
-    clip: rect(82px, 9999px, 187px, 0);
+    clip: rect(82px, 9999px, 197px, 0);
   }
 
   80% {
-    clip: rect(25px, 9999px, 153px, 0);
+    clip: rect(25px, 9999px, 16px, 0);
   }
 
   85% {
-    clip: rect(76px, 9999px, 200px, 0);
+    clip: rect(76px, 9999px, 75px, 0);
   }
 
   90% {
-    clip: rect(2px, 9999px, 100px, 0);
+    clip: rect(2px, 9999px, 12px, 0);
   }
 
   95% {
-    clip: rect(9px, 9999px, 242px, 0);
+    clip: rect(9px, 9999px, 176px, 0);
   }
 
   100% {
-    clip: rect(41px, 9999px, 281px, 0);
+    clip: rect(41px, 9999px, 155px, 0);
   }
 }
 
 @keyframes pa-noise-anim-2 {
   0% {
-    clip: rect(14px, 9999px, 221px, 0);
+    clip: rect(14px, 9999px, 160px, 0);
   }
 
   5% {
-    clip: rect(19px, 9999px, 296px, 0);
+    clip: rect(19px, 9999px, 155px, 0);
   }
 
   10% {
-    clip: rect(17px, 9999px, 97px, 0);
+    clip: rect(17px, 9999px, 212px, 0);
   }
 
   15% {
-    clip: rect(46px, 9999px, 24px, 0);
+    clip: rect(46px, 9999px, 288px, 0);
   }
 
   20% {
-    clip: rect(28px, 9999px, 300px, 0);
+    clip: rect(28px, 9999px, 193px, 0);
   }
 
   25% {
-    clip: rect(64px, 9999px, 279px, 0);
+    clip: rect(64px, 9999px, 174px, 0);
   }
 
   30% {
-    clip: rect(58px, 9999px, 160px, 0);
+    clip: rect(58px, 9999px, 278px, 0);
   }
 
   35% {
-    clip: rect(18px, 9999px, 282px, 0);
+    clip: rect(18px, 9999px, 57px, 0);
   }
 
   40% {
-    clip: rect(61px, 9999px, 155px, 0);
+    clip: rect(61px, 9999px, 61px, 0);
   }
 
   45% {
-    clip: rect(63px, 9999px, 97px, 0);
+    clip: rect(63px, 9999px, 161px, 0);
   }
 
   50% {
-    clip: rect(59px, 9999px, 266px, 0);
+    clip: rect(59px, 9999px, 101px, 0);
   }
 
   55% {
-    clip: rect(20px, 9999px, 176px, 0);
+    clip: rect(20px, 9999px, 113px, 0);
   }
 
   60% {
-    clip: rect(49px, 9999px, 58px, 0);
+    clip: rect(49px, 9999px, 146px, 0);
   }
 
   65% {
-    clip: rect(70px, 9999px, 5px, 0);
+    clip: rect(70px, 9999px, 275px, 0);
   }
 
   70% {
-    clip: rect(70px, 9999px, 44px, 0);
+    clip: rect(70px, 9999px, 94px, 0);
   }
 
   75% {
-    clip: rect(82px, 9999px, 187px, 0);
+    clip: rect(82px, 9999px, 197px, 0);
   }
 
   80% {
-    clip: rect(25px, 9999px, 153px, 0);
+    clip: rect(25px, 9999px, 16px, 0);
   }
 
   85% {
-    clip: rect(76px, 9999px, 200px, 0);
+    clip: rect(76px, 9999px, 75px, 0);
   }
 
   90% {
-    clip: rect(2px, 9999px, 100px, 0);
+    clip: rect(2px, 9999px, 12px, 0);
   }
 
   95% {
-    clip: rect(9px, 9999px, 242px, 0);
+    clip: rect(9px, 9999px, 176px, 0);
   }
 
   100% {
-    clip: rect(41px, 9999px, 281px, 0);
+    clip: rect(41px, 9999px, 155px, 0);
   }
 }
 
@@ -20073,6 +20152,8 @@ html.premium-woo-qv-opened body {
 .premium-woo-qv-image-slider img {
   object-fit: cover;
   width: 100%;
+  display: block;
+  height: auto;
 }
 
 .premium-woo-qv-image-slider .flex-direction-nav {
