@@ -307,7 +307,7 @@ a.card:hover, .post-card:hover, .project:hover {
 .menu-open .navtoggle__open { display: none; }
 .menu-open .navtoggle__close { display: block; }
 
-.nav { display: flex; align-items: center; gap: 22px; }
+.nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
 .nav ul { display: flex; align-items: center; gap: 4px; }
 
 .nav li a {
@@ -388,7 +388,17 @@ a.card:hover, .post-card:hover, .project:hover {
 		font-size: 1.2rem;
 	}
 
-	.nav__tools { justify-content: space-between; }
+	/* O idioma fica fora do menu, sempre à vista */
+	.topbar__row { gap: 8px; }
+	.brand { gap: 8px; margin-right: auto; font-size: .95rem; }
+	.brand img { width: 38px; height: 38px; }
+	.lang { order: 1; }
+	.navtoggle { order: 2; width: 42px; height: 42px; }
+	.lang a.glink { min-width: 32px; }
+}
+
+@media (max-width: 349px) {
+	.topbar .brand span { display: none; }
 }
 
 /* ---------- hero ---------- */
@@ -822,8 +832,8 @@ html.translated-ltr .lang-en { display: inline; margin-inline: .26em; }
 
 .pubs { display: grid; gap: 28px; }
 .pub { display: grid; overflow: hidden; }
-.pub__figure { display: block; padding: 16px; background: #fff; }
-.pub__figure img { width: 100%; max-height: 260px; object-fit: contain; }
+.pub__figure { display: block; min-height: 220px; background: var(--surface); }
+.pub__figure img { width: 100%; height: 100%; object-fit: cover; }
 .pub__body { padding: 26px clamp(22px, 3vw, 34px) 30px; }
 .pub h2 { margin-bottom: 12px; font-size: clamp(1.2rem, 1.8vw, 1.5rem); line-height: 1.3; }
 .pub__cite { color: var(--muted); font-size: .94rem; overflow-wrap: anywhere; }
@@ -970,7 +980,6 @@ html.translated-ltr .lang-en { display: inline; margin-inline: .26em; }
 
 @media (min-width: 760px) {
 	.pub { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
-	.pub__figure { display: grid; place-items: center; }
 }
 
 @media (max-width: 1040px) {
