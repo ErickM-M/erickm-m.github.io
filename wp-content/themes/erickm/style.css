@@ -457,7 +457,7 @@ a.card:hover, .post-card:hover, .project:hover {
 
 .facts dd { display: grid; gap: 6px; margin: 0; line-height: 1.45; }
 .facts dd strong { color: var(--text); font-size: 1.06rem; font-weight: 700; line-height: 1.3; }
-.facts dd span { color: var(--muted); font-size: .93rem; }
+.facts dd > span { color: var(--muted); font-size: .93rem; }
 
 @media (max-width: 899px) {
 	.hero__grid { grid-template-columns: 1fr; }
@@ -684,7 +684,7 @@ a.card:hover, .post-card:hover, .project:hover {
 .lang-en, html.translated-ltr .lang-pt { display: none; }
 html.translated-ltr .lang-en { display: inline; margin-inline: .26em; }
 .timeline__roles strong { color: var(--text); font-size: 1rem; font-weight: 500; }
-.timeline__roles span { color: var(--muted); font-size: .88rem; }
+.timeline__roles li > span { color: var(--muted); font-size: .88rem; }
 
 .filters {
 	display: flex;

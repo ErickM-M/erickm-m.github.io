@@ -26,6 +26,46 @@
 		});
 	}
 
+	/* Idioma: o GTranslate carrega a tradução sob demanda, então o clique espera por ela */
+	var lang = document.querySelector('.lang');
+	if (lang) {
+		/* A retomada automática do plugin trava ao trocar de página; o tema refaz a escolha depois de carregar */
+		var savedLang = null;
+		try {
+			var stored = JSON.parse(localStorage.getItem('__GT_TRANSLATE_LANGS'));
+			if (stored && stored.tgtLang && stored.tgtLang !== 'pt') {
+				savedLang = stored.tgtLang;
+				localStorage.removeItem('__GT_TRANSLATE_LANGS');
+			}
+		} catch (err) {
+			savedLang = null;
+		}
+		if (savedLang) {
+			window.addEventListener('load', function () {
+				var wrapper = lang.querySelector('.gtranslate_wrapper');
+				var chosen = wrapper && wrapper.querySelector('a[data-gt-lang="' + savedLang + '"]');
+				if (!chosen) return;
+				wrapper.dispatchEvent(new Event('pointerenter'));
+				chosen.click();
+			});
+		}
+
+		lang.addEventListener('click', function (e) {
+			var link = e.target.closest('a[data-gt-lang]');
+			if (!link || window.__GT || lang.dataset.waited) return;
+			e.preventDefault();
+			e.stopPropagation();
+			var tries = 0;
+			var wait = setInterval(function () {
+				tries += 1;
+				if (!window.__GT && tries < 50) return;
+				clearInterval(wait);
+				lang.dataset.waited = '1';
+				link.click();
+			}, 100);
+		}, true);
+	}
+
 	/* Cabeçalho ganha fundo ao rolar */
 	var bar = document.querySelector('.topbar');
 	var onScroll = function () {
