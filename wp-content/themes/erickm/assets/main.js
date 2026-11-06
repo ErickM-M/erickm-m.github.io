@@ -97,7 +97,7 @@
 				if (!a) return;
 				e.preventDefault();
 				img.src = a.href;
-				img.alt = 'Certificado: ' + a.dataset.title;
+				img.alt = 'Certificado ' + a.dataset.title;
 				cap.textContent = a.dataset.title;
 				box.showModal();
 			});
